@@ -1,0 +1,35 @@
+-- Retrieve data from FOOD_NAME TABLE
+SELECT FoodId, FoodGroupID
+FROM FOOD_NAME
+WHERE FoodId = 6;
+
+-- Retrieve data from FOOD_GROUP TABLE
+SELECT FoodGroupName FROM FOOD_GROUP WHERE FoodGroupID = 18;
+
+-- table prefix automatically added when only 1 table
+SELECT FOOD_GROUP.FoodGroupName FROM FOOD_GROUP WHERE FOOD_GROUP.FoodGroupID = 18;
+
+-- table alias
+SELECT FG.FoodGroupName FROM FOOD_GROUP AS FG WHERE FG.FoodGroupID = 18;
+
+
+SELECT FOOD_NAME.FoodId, FOOD_NAME.FoodGroupId, FOOD_GROUP.FoodGroupID, FOOD_GROUP.FoodGroupName
+FROM FOOD_NAME, FOOD_GROUP
+WHERE FOOD_NAME.FoodId = 7 AND FOOD_GROUP.FoodGroupID = FOOD_NAME.FoodGroupID;
+
+
+SELECT * FROM NUTRIENT_NAME 
+WHERE NutrientName IN ('PROTEIN', 'SODIUM');
+-- WHERE NutrientName = 'PROTEIN' OR NutrientName = 'SODIUM'; -- SAVE AS ABOVE
+ 
+
+SELECT FoodID, NutrientID, NutrientValue FROM NUTRIENT_AMOUNT 
+WHERE FoodID = 6 AND NutrientID = 203;
+ 
+SELECT FoodID, NutrientID, NutrientValue FROM NUTRIENT_AMOUNT 
+WHERE FoodID = 6 AND NutrientID = 307;
+ 
+SELECT FoodID, NutrientID, NutrientValue FROM NUTRIENT_AMOUNT 
+WHERE FoodID = 6 AND ( NutrientID = 203 OR NutrientID = 307 );
+
+ 
