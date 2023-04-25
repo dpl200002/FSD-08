@@ -1,0 +1,26 @@
+- HOME
+download demo
+buy software
+describe advantages
+testimonials
+video outline 
+
+	- FAQ (not for IDE issues)
+	- COMPARISON
+	- PRICING
+		download
+		previous versions
+	- TESTIMONIALS (if > 10)
+
+
+-HEADER
+	logo
+	pricing
+	compare
+	testimonials
+
+-FOOTER:
+newsletter sign up
+FAQ
+social media
+contact email / careers email 

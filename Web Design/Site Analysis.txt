@@ -1,0 +1,46 @@
+FSD 08 
+
+Build a website for a new software.
+
+END GOAL?
+PRIMARY: Get users to download the software
+SECONDARY:
+Inform the user about our software
+
+TARGET AUDIENCE ?
+Depends on the software... Programming IDE for beginners
+- Developers (beginners)-
+- Designers
+- Everyone 14-30y/o
+
+
+CONTENT:
+- Less technical due to beginners lack of Knowledge
+- Graphics showing the IDE
+- Download Demo Button
+- Describe Advantages
+- Video outline showing ease of use
+- Testimonials from users
+- Pricing Table (Demo, Paid, Business/Educational Solution)
+- Newsletter Subscription
+- Social Media Links
+- Feature Comparisons
+- FAQ
+- Operating System - Windows, Mac, Linux!!!!!
+
+FUTURE CONSIDERATIONS: 
+- Try it yourself online
+- Careers
+- Blog
+
+
+
+SITEMAP: 
+header: Logo | About | Updates | Download | Versions | Forum, Education | Blog | Contact | Careers | Search | Login Cart
+
+Footer: Social, Languages, Support, ToS
+
+
+WIREFRAMES
+Desktop: https://wireframe.cc/Bdgh9d
+Mobile: https://wireframe.cc/psOttR
