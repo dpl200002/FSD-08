@@ -1,0 +1,18 @@
+MAIN BLUE (Monochromatic)
+60A1CC
+
+MAIN GREEN (Complementary)
+2FA156
+
+MAIN ORANGE (Complementary)
+#FF8F17
+
+
+METAL BLUE
+#34475C
+
+
+
+FONTS
+HEADING: JetBrains Mono
+TEXT: Raleway
