@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Practice HTML Forms</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<h2>Registration Form</h2>
+	<form method="POST" action="http://jac.stephmoreau.ca/submitForm/">
+		<label for="txtName">Enter Name</label>
+		<input class="" type="text" id="txtName">
+		<br>
+		<label for="txtPw">Enter Password</label>
+		<input type="password" id="txtPw"><br>
+		<label for="txtAddress">Enter Address</label>
+		<textarea rows="3" name="address" id="txtAddress"></textarea>
+		<br>
+		Select Game<br>
+		<input type="checkbox" name="gameHockey" id="chkGameHockey"><label for="chkGameHockey">Hockey</label> <br>
+		<input type="checkbox" name="gameFoot" id="chkGameFootball"><label for="chkGameFootball">Football</label><br>
+		<input type="checkbox" name="gameBad" id="chkGameBadminton"><label for="chkGameBadminton">Badminton</label>br>
+		<input type="checkbox" name="gameCrick" id="chkGameCricket"><label for="chkGameCricket">Cricket</label><br>
+		<input type="checkbox" name="gameVolley" id="chkGameVolleyball"><label for="chkGameVolleyball">Volleyball</label>
+		<br>Gender
+		<input type="radio" name="gender" value="m" id="rGenderMale" checked> <label for="rGenderMale">Male</label>
+		<input type="radio" name="gender" value="f" id="rGenderFemale"> <label for="rGenderFemale">Female</label>
+		<input type="radio" name="gender" value="o" id="rGenderOther"> <label for="rGenderOther">Other</label>
+		<br><label for="selAge">Select ur age</label><br>
+		<select name="age" id="selAge">
+			<option value="">Select </option>
+			<option>15</option>
+			<option>16</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+			<option>21</option>
+			<option value="22+">More than 22</option>
+		</select>
+		<br>
+		<input type="button" value="Click Me">
+		<input type="reset">
+		<input type="submit" value="Submit Form">
+	</form>
+</body>
+
+</html>
