@@ -16,3 +16,7 @@ METAL BLUE
 FONTS
 HEADING: JetBrains Mono
 TEXT: Raleway
+
+
+IMAGE
+https://www.pexels.com/photo/brown-leaf-on-lapotp-3219549/
