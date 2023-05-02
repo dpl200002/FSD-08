@@ -1,0 +1,44 @@
+h2 {
+	color: green;
+	text-align: center !important;
+}
+
+h2 {
+	text-align: left;
+}
+
+
+/* id selector */
+#headingProgress{
+	background-color: #f445f9;
+}
+/* class */
+.bgYellow{
+	background-color: yellow;
+}
+
+.bgOrange{
+	background-color: #ffa500;
+}
+
+.txtBlue{
+	color: blue;
+	font-weight: bold;
+}
+
+/* combined selectors */
+h2.bgYellow{
+	color:black;
+}
+
+p.bgYellow.bgOrange{
+	font-weight: 900;
+}
+
+section #headingHtml{
+	font-size:30px;
+}
+
+header h2 {
+	background-color: #ff6347;
+}

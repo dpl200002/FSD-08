@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- For the browser -->
+		<title>Tables</title>
+		<meta charset="utf-8" >
+		<style> /* internal css - so we can see our table */
+		table { border: 2px solid black; }
+		td { border: 2px solid red; }
+		th { border: 2px solid blue; }
+
+		</style>
+	</head>
+	<body> <!-- For my user-->
+
+		<h1>Tables</h1>
+
+		<table><!-- define a table -->
+			<caption>Dummy data</caption>
+			<thead>
+				<tr>
+					<th>Number</th><!-- table heading - cell -->
+					<th>Food</th>
+					<th>Animal</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><!-- table row -->
+					<td>1.1</td><!-- table data - cell-->
+					<td>Apples</td>
+					<td>Cat</td>
+					<td>3$</td>
+				</tr>
+				<tr>
+					<td>2.1</td>
+					<td rowspan="2">Banana</td><!-- go over multiple rows -->
+					<td>Mountain Goat</td>
+					<td>7$</td>
+				</tr>				
+				<tr>
+					<td>3.1</td>
+					<!-- <td>Banana</td> rowspan from above -->
+					<td>Bull</td>
+					<td>7$</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Total</td>
+					<td>17$</td>
+				</tr>
+			</tfoot>
+		</table>
+
+
+	</body>
+
+</html>

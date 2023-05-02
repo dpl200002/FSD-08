@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- For the browser -->
-		<title>Fun with Forms</title>
-		<meta charset="utf-8" >
-	</head>
-	<body> <!-- For my user-->
-<h1> Fun with Forms</h1> 
+
+<head>
+	<!-- For the browser -->
+	<title>Fun with Forms</title>
+	<meta charset="utf-8">
+</head>
+
+<body> <!-- For my user-->
+	<h1> Fun with Forms</h1>
 	<form action="https://www.ctvnews.ca/search-results/search-ctv-news-7.137" method="GET">
-	<!-- action = WHERE
+		<!-- action = WHERE
 			method = HOW ( GET / POST )
 		-->
-			<label>google search:</label> 
+		<label>google search:</label>
 		<input type="text" name="q" placeholder="Start your search..." value="Hello">
 		<br>
 		<input type="text" name="demo" value="Testing" maxlength="10">
 		<br>
 		<input type="submit" name="btnSubmit" value="Search Google">
 		<input type="reset" name="btnReset" value="Reset the form">
-		<input type="button"name="btnButton" value="I do nothing">
-		
+		<input type="button" name="btnButton" value="I do nothing">
+
 		<input type="hidden" name="secret" value="1234">
 	</form>
-<hr>
-<h2>Amazon</h2>
+	<hr>
+	<h2>Amazon</h2>
 	<form action="https://www.amazon.ca/s" method="GET">
-<label>amazon search: </label><input type="text" name="k"><br>
-<br>
-<button type="submit" name="btnSubmit">
-	<img src="images/image-small.jpeg" alt="decorative button"> Search Amazon
-</button>
-<br>
-<button type="reset" name="btnReset">
-	Reset<br>form
-</button>
-<br>
-<button type="button" name="btnSubmit">
-	 <strong>NOTHING</strong>
-</button>
+		<label>amazon search: </label><input type="text" name="k"><br>
+		<br>
+		<button type="submit" name="btnSubmit">
+			<img src="images/image-small.jpeg" alt="decorative button"> Search Amazon
+		</button>
+		<br>
+		<button type="reset" name="btnReset">
+			Reset<br>form
+		</button>
+		<br>
+		<button type="button" name="btnSubmit">
+			<strong>NOTHING</strong>
+		</button>
 
 	</form>
-<hr>
+	<hr>
 	<form>
 		<h2>Input form elements</h2>
-Text: <input type="text" name="txtForm"><br>
-Password: <input type="password" value="123"><br>
-Hidden: <input type="hidden"><br>
-Number: <input type="number" step="5" min="10"><br>
-Email: <input type="email"><br>
-File: <input type="file"><br>
-Color: <input type="color" name="colorForm"><br>
-Range: <input type="range"><br>
-Telephone: <input type="tel"><br> <!-- Mobile support -->
-Url: <input type="url"><br>
+		Text: <input type="text" name="txtForm"><br>
+		Password: <input type="password" value="123"><br>
+		Hidden: <input type="hidden"><br>
+		Number: <input type="number" step="5" min="10"><br>
+		Email: <input type="email"><br>
+		File: <input type="file"><br>
+		Color: <input type="color" name="colorForm"><br>
+		Range: <input type="range"><br>
+		Telephone: <input type="tel"><br> <!-- Mobile support -->
+		Url: <input type="url"><br>
 
-<p><input type="submit"></p>
-</form>
+		<p><input type="submit"></p>
+	</form>
 
-<hr>
-<h2>Other form elements</h2>
-<form action="http://jac.stephmoreau.ca/submitForm/" method="POST">
-	<label>Comments</label><br>
-	<textarea name="comments" rows="5" cols="50"></textarea>
-	<br>
-	<label for="uname">Your name please?</label> <input type="text" name="username" id="uname">
-	<br>
-	<!-- when using multiple, have your name be an array -->
-	<select name="foods[]" multiple>
-		<option value="app">Apple</option>
-		<option value="pizza">Pepperoni Pizza</option>
-		<option value="cake">Triple Layer Chocolate Cake</option>
-	</select>
-	<br>
-<p>
-	<input type="checkbox" name="chkLegal" id="chkLegal"> 
-	<label for="chkLegal">I accept the rules</label><br>
-	<input type="checkbox" name="chkNews" id="chkNewsCheckbox" value="yes" checked>
-	<label for="chkNewsCheckbox">I also accept the newsletter</label>.
-	</p>
-	<p>
+	<hr>
+	<h2>Other form elements</h2>
+	<form action="http://jac.stephmoreau.ca/submitForm/" method="GET">
+		<label>Comments</label><br>
+		<textarea name="comments" rows="5" cols="50"></textarea>
+		<br>
+		<label for="uname">Your name please?</label> <input type="text" name="username" id="uname">
+		<br>
+		<!-- when using multiple, have your name be an array -->
+		<select name="foods[]" multiple>
+			<option value="app">Apple</option>
+			<option value="pizza">Pepperoni Pizza</option>
+			<option value="cake">Triple Layer Chocolate Cake</option>
+		</select>
+		<br>
+		<p>
+			<input type="checkbox" name="chkLegal" id="chkLegal">
+			<label for="chkLegal">I accept the rules</label><br>
+			<input type="checkbox" name="chkNews" id="chkNewsCheckbox" value="yes" checked>
+			<label for="chkNewsCheckbox">I also accept the newsletter</label>.
+		</p>
 		<h4>Current School</h4>
-<input type="radio" name="radSchool" value="jac" id="radSchoolJac">
-<label for="radSchoolJac">John Abbott College</label><br>
-<input type="radio" name="radSchool" value="van" id="radSchoolVanire"> 
-<label for="radSchoolVanire">Vanier</label><br>
-<input type="radio" name="radSchool" value="daw" id="radSchoolDawson"> 
-<label for="radSchoolDawson">Dawson</label><br>
+		<p>
+			<input type="radio" name="radSchool" value="jac" id="radSchoolJac">
+			<label for="radSchoolJac">John Abbott College</label><br>
+			<input type="radio" name="radSchool" value="van" id="radSchoolVanire">
+			<label for="radSchoolVanire">Vanier</label><br>
+			<input type="radio" name="radSchool" value="daw" id="radSchoolDawson">
+			<label for="radSchoolDawson">Dawson</label><br>
 
-	</p>
-	<input type="submit" name="btnExtra">
-</form>
+		</p>
+		<input type="submit" name="btnExtra">
+	</form>
 
-<p><br><br><br><br><br><br></p>
-	</body>
+
+</body>
 
 </html>

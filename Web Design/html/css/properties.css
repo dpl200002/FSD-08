@@ -1,0 +1,87 @@
+html{
+	font-size: 18px;
+}
+*{
+	font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+section{
+	font-size:20px;
+}
+p, li{
+	font-size: .8rem;
+	font-weight: 600;
+	font-style: normal;
+}
+
+h2{
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 2px;
+}
+/* not the h2 in the header */
+
+h1{
+	font-style: normal;
+}
+
+a{
+	text-decoration: none;
+	text-transform:capitalize;
+}
+
+p::first-line{
+	color: aqua;
+}
+
+/* LoVe HAte */
+a:link{
+	color:navy;
+}
+a:visited{
+	color:hotpink;
+}
+a:hover{
+	font-weight: 100;
+}
+a:active{
+	color:khaki;
+}
+
+
+/* lists */
+li{
+	list-style-type: none;
+}
+li:nth-child(4n + 2){
+	list-style-type: circle;
+}
+
+ul :last-of-type{
+	background-color: yellow;
+}
+
+/* direct child */
+section > h2{ 
+	color: red;
+}
+
+/* adjacent selector */
+h1 + h2{
+	background-color:lightblue;
+}
+
+/* sibling selector */
+h1 ~ .bgYellow{
+	color: orange;
+}
+
+body{
+	background-image: url(../images/image-laptop-big.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-color: teal;
+	background-position: center;
+	background-attachment: fixed;
+}
