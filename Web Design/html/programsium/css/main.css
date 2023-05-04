@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Raleway:wght@200;400;700&display=swap');
+
+
+/* 
+BLUE = 34475C
+LIGHT GREY = d9d9d9
+ORANGE = E88F00
+
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Raleway', sans-serif;
+*/
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+	color: #34475C;
+	font-family: 'JetBrains Mono', 'Consolas', monospace;
+	text-transform: uppercase;
+
+}
+
+h1 {
+	letter-spacing: 3px;
+}
+
+.btn {
+	font-weight: 700;
+	/* bold */
+}
+
+
+/* top nav, bottom nav */
+#header, footer {
+	background-color: #34475C;
+	color: #D9D9D9;
+}
+
+#header a, footer a {
+	color: #d9d9d9;
+}
+
+#header a.btn {
+	color: #34475c;
+}
+
+#header {
+	margin-bottom: 1em;
+}
+
+footer h3 {
+	color: #D9D9D9;
+}
+
+#footer {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 1em;
+}
+
+#footer nav a {
+	text-decoration: none;
+}
+
+/*
+#footer nav a::after{
+content: "|";
+padding: 0 .25em;
+}
+#footer nav a:last-child::after{
+content: "";
+padding: 0;
+}
+*/
+
+#footer nav a:not(:last-child)::after {
+	content: "|";
+	padding: 0 .25em;
+}
+
+
+.adv-icon {
+	font-size: 0.75em;
+	text-align: center;
+}
+
+.adv-icon .bi {
+	font-size: 4em;
+	color: #E88F00;
+}
+
+.navbar-brand img{
+	max-height: 30px;
+}
+
+/* index */
+#adv-test section{
+	margin: 1em 0; 
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (min-width: 516px){
+	h1{ font-size: 2.25em; }
+}
+@media screen and (min-width: 600px){
+	h1{ font-size: 2.5em; }
+}
+@media screen and (min-width: 700px){
+	h1{ font-size: 2.8em; }
+}
+@media screen and (min-width: 789px) and (max-width: 991px){
+	h1{font-size: 3.7em;}
+}
+/* 
+h1{
+	line-height: 1.5em;
+	font-size: 2.75em;
+} */
