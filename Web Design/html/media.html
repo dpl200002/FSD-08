@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- For the browser -->
+		<title>My title</title>
+		<meta charset="utf-8" >
+	</head>
+	<style>
+div { 
+	height: 200px;
+}
+.blue { background-color: blue;}
+.red { background-color: red;}
+
+@media screen and (min-width:600px){
+	.blue{ width: 200px; }
+	.red { background-color: pink;}
+}
+@media screen and (min-width:550px) and (max-width:700px){
+	.red { width: 400px;}
+}
+@media screen and (min-height: 400px){
+	.blue { background: lightblue; }
+}
+@media print{
+	a { display: none;}
+}
+	</style>
+	<body> <!-- For my user-->
+	Template 
+
+	<div class="blue"></div>
+	
+	<div class="red"></div>
+	<a href="practice.html">Back to practice</a>
+	</body>
+
+</html>
