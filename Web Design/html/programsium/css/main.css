@@ -9,13 +9,18 @@ ORANGE = E88F00
 font-family: 'JetBrains Mono', monospace;
 font-family: 'Raleway', sans-serif;
 */
+/* prevent side from being too wide */
+.container, .container-fluid{
+	max-width: 1600px;
+}
 
 body {
 	font-family: 'Raleway', sans-serif;
 }
 
 /* headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6
+.h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #34475C;
 	font-family: 'JetBrains Mono', 'Consolas', monospace;
 	text-transform: uppercase;
@@ -31,6 +36,9 @@ h1 {
 	/* bold */
 }
 
+.btn.btn-light{
+	background-color: #d9d9d9;
+}
 
 /* top nav, bottom nav */
 #header, footer {
@@ -51,6 +59,7 @@ h1 {
 }
 
 footer h3 {
+	font-size: 1.3em;
 	color: #D9D9D9;
 }
 
@@ -101,6 +110,42 @@ padding: 0;
 }
 
 
+
+/* testimonials */
+.slick-testimonials .card-body{
+	color: #34475C;
+}
+.slick-testimonials img, .testimonial-items img{
+	border-radius: 50%;
+}
+.slick-testimonials small{
+	font-style: italic;
+}
+.testimonial-items {
+	font-size: .8em;;
+}
+
+
+/* pricing */
+.pricetable{
+	text-align: center;
+}
+.pricetable .card-body{
+	background-color: #d9d9d9;
+}
+.pricetable.special .card-body{
+	background-color: #E88F00;
+}
+.pricetable .card-text{
+	font-size: .8em;
+}
+
+/* SLICK */
+
+.slick-prev:before, .slick-next:before {
+   color: #34475C;
+}
+
 /* MEDIA QUERIES */
 
 
@@ -112,9 +157,10 @@ padding: 0;
 }
 @media screen and (min-width: 700px){
 	h1{ font-size: 2.8em; }
+	.testimonial-items { font-size: 1em; }
 }
 @media screen and (min-width: 789px) and (max-width: 991px){
-	h1{font-size: 3.7em;}
+	.homepage h1{font-size: 3.7em;}
 }
 /* 
 h1{
