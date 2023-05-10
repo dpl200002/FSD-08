@@ -121,6 +121,22 @@ public class ArrayStuff {
 
 	}
 
+	// generate the subarray between 2 given index
+	public static int[] subArray(int start, int end, int ... list) {
+		return new int[20];
+		
+		
+		//	Arrays.copyOfRange(list, start, end)
+	}
+
+
+	public static int[] generateRandom(int count, int min, int max) {
+		int[] r = new int[count];
+		for (int i = 0; i<r.length; i++) {
+			r[i] = randomNumber(max,min);
+		}
+		return r;
+	}
 	public static double[] generateRandomDouble(int count, int min, int max) {
 		double[] r = new double[count];
 		for (int i = 0; i<r.length; i++) {
