@@ -5,28 +5,23 @@
 	<title>JavaScript Examples</title>
 </head>
 <body>
-	<h1>Hello World</h1>
-	<div>
-		Ninja Cats are super cool!<br>
-		<!-- we can add javascript anywhere in our page -->
-		<script>
-			// this will write to the webpage where it is written 
-			document.write("I love ninja cats"); 
-		</script>
-		<br>
-		Yes they really are
-	</div>
+	<h1 class="txtBlue">Hello World</h1>
+	<h2 id="welcome">Welcome to my <span>page</span></h2>
 
-	<script>/*
-	// code written internally
-		// shows browser popup
-		//alert("Hello World");
-		console.log("Hello Console");
-		console.log(54884/245);
-		*/
+	<p>Ninja Cats are super cool!<br>Yes they really are</p>
+	<p class="txtBlue">Ninja Hamsters are also pretty cool.</p>
+	<p>Ninja dogs are not cool! <a href="http://google.ca" id="googleLink">Go to google</a></p>
+
+	<script>
+	function myFunc(){
+		myVar = 3;
+		myFunc = 7; // will replace the myFunc function because no let keyword = global scope
+		console.log(myVar + myFunc);
+	}
+
 	</script>
-	<script src="js/class05.js"></script>
-	<script src="js/age.js">
+	<script src="js/class06.js"></script>
+	<script src="js/timers.js">
 		//anything here will be ignored because of the src attribute
 	console.log("Nothing to show");
 	</script>
