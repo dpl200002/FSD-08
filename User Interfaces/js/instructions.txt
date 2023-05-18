@@ -1,0 +1,175 @@
+--- age.js ---
+/*
+
+CLASS 01
+We want to be able to calculate the possible age a user has.
+
+1. Store the current year in a variable.
+2. Store the users birth year in a variable.
+3. Calculate and save their 2 possible ages based on the stored values.
+4. Output to the console the users age
+		"You're either   X   or   Y   years old."
+*/
+/*
+let currentYear = 2023; // step 1
+let birthYear = 1998; // step 2
+
+// Step 3
+let ageA, ageB;
+ageA = currentYear - birthYear;
+ageB = currentYear - birthYear - 1;
+
+// step 4
+console.log("You're either " + ageA + " or " + ageB + " years old.");
+*/
+
+/* CLASS 02
+
+Using your previously created file we are going to implement functions to make our code reusables
+Create a function that will take a user's birth year as the only parameter.
+This function should validate that the provided birth year is a javscript number 
+
+
+----
+Prompt users to provide you with a year of birth.
+If they fail to provide a year ignore their request and do nothing else.
+If they provide anything other then a year that is less then or equal the current year, alert them with an error message and Prompt them again
+If their input pass validation, alert the user with their possible ages.
+
+*/
+
+
+--- array.js ---
+/*
+
+Write a  function which accept a string as input 
+Swap the case of each character
+Output the result to the console
+
+swapCase("Orange Ninja Cats"); // "oRANGE nINJA cATS"
+
+Hint 1: Create two arrays that contain each letter of the alphabet
+Hint 2: Find the index of the letter you are looking for (conditional statement)
+
+*/
+
+
+
+--- colors.js ---
+// Create an array named colors that contains five different names of colors 
+// Colors should be red, blue, yellow, orange, purple 
+// Access the first color in the array and print it to the console
+// Access the third color in the array and print it to the console
+// Write one line of code that changes the value of the last color in the list to "green".
+// Create a new variable called fourth Color and set it equal to the fourth color in the list and print it to the console.
+// Add the color pink to the end of the list.
+// Add the color white to the beginning of the list.
+// Print the length of the array to the console with console.log()
+// Remove the last color from the end of list and print it to the console.
+// Output every color's value and every color's index in this format:  3, purple or 0, blue etc.
+
+
+--- convert.js ---
+
+/*
+PART 1
+convert C to F 
+Store a Celsius temperature into a variable.
+Save the converted Fahrenheit temperature in a variable
+C to F = Multiply by 9, then divide by 5, then add 32
+Output to the console.	 X   C is    Y   F.
+
+Store a Fahrenheit temperature into a variable.
+Save the converted Celsius temperature in a variable
+F to C = Subtract 32, then multiply by 5, then divide by 9
+Output to the console.	 X   F is    Y   C.
+
+Store a weight value in pounds
+Save the converted kilogram weight in a variable
+KG = LBS / 2.2046
+Output to the console.	X   lbs is  Y   kg.
+
+Store a weight value in kilograms
+Save the converted pounds weight in a variable
+LBS = KG / 0.454
+Output to the console.	X   kg is  Y   lbs.
+
+
+PART 2
+Create functions for the 4 different calculation we have in our file
+	convertC2F(x)
+	convertF2C(x)
+	convertLbs2Kg()
+	convertKg2Lbs()
+Using the built-in Number methods, toFixed the output so that the does not exceed 2 decimals spaces
+	2 decimal for the KG
+	1 decimal for the temperatures
+	0 decimal for the LBS
+*/
+
+
+--- fortune.js --- 
+/* CLASS 01
+Your fortune is soon to be revealed
+Store the following information in variables
+	Number of children
+	Partner's name
+	Job Title
+	Geographical Location
+	Name for a Dog
+Output to the console the users fortune
+*/
+/*
+// let numKids, partner, job, geoLocation, dog, fortune;
+
+let numKids = 4;
+let partner = "Bob";
+let job = "Teacher";
+let geoLocation = "Ste-Anne";
+let dog = "Scruffy";
+
+let fortune = "You will be a " + job + " who will one day marry " + partner + " and live in " + geoLocation + " with your " + numKids + " kids and your dog " + dog + ".";
+
+console.log(fortune);
+*/
+
+/* CLASS 02
+Turn the script into a function
+The last parameter should be Number of Kids
+Number of kids should have a default value of 0
+
+Change the sentence structure depending on number of children.  
+if NUMBER OF KIDS is 0, do not mention them
+…and live in   G   with your dog   D .
+if NUMBER OF KIDS is 1, kids is singular
+…and live in   G with your 1 kid and your dog   D .
+if NUMBER OF KIDS is greater then 1, kids is plural
+…and live in   G with your   N   kids and your dog   D .
+if NUMBER OF KIDS is less then 0, do not mention them
+…and live in   G with your dog   D  .
+*/
+
+
+
+--- timers.js ---
+*
+
+Write a function name bgTimer 
+Every2.6 seconds output to the console the words right and left (alternating) 
+Every 3.9 seconds alternate the words UP and DOWN (alternating)
+After 15 seconds alert the user "I'm so dizzy" and stop all the timers
+*/
+/*
+Write a function whatsMyName() that will prompt the user for their name. 
+If the user inputs their name, every second console.log their name -1 letter
+Examples of console output: 
+Prompt input Bob
+Console will show: 
+		Bob
+		Bo
+		B
+Once there are no letters left, alert the user good bye and their name
+		Good Bye Bob!
+*/
+
+
