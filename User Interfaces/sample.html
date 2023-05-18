@@ -27,7 +27,8 @@
 	<img src="https://picsum.photos/id/234/120/120" alt="" id="image2">
 	<img src="https://picsum.photos/id/345/120/120" alt="" id="image3">
 	<img src="https://picsum.photos/id/456/120/120" alt="" id="image4">
-	<input type="button" id="btnSwapImage" value="Swap Images" onClick="doImageSwap()">
+	<input type="button" id="btnSwapImage" value="Swap Images" 
+				onClick=" dummyFunction('Hello I\'m Steph'); doImageSwap();">
   <main>
 		<section>
 			<h2>Raboriosam repellat quas iusto?</h2>
@@ -44,7 +45,7 @@
   </main>
 	<section id="formStuff">
 		<h2>Form to fill out</h2>
-		<form action="#">
+		<form action="webpage.html">
 			<label for="txtFirstName">First name:</label><br>
 			<input type="text" name="firstName" id="txtFirstName"><br>
 			<label for="txtLastName">Last name:</label><br>
@@ -53,13 +54,13 @@
 			<input type="email" name="email" id="txtEmail"><br>
 			<label for="txtMessage">Message:</label><br>
 			<textarea name="message" id="txtMessage"></textarea><br>
-			<input type="submit" value="Submit">
+			<input type="submit" value="Submit" id="btnSubmit">
 		</form>
 	</section>
 	<div id="random"></div>
   <footer>
     <small id="copyright" class="awayLink">&copy;<script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
   </footer>
-
+<script src="js/class07.js"></script>
 </body>
 </html>
