@@ -7,11 +7,8 @@
   <meta name="description" content="" >
   <link rel="icon" href="favicon.png">
 	<style>
-		input:invalid{
-			background: red;
-		}
-		input:valid{
-			background: lime;
+		.homeLink{
+			background-color: lightblue;
 		}
 	</style>
 </head>
@@ -60,11 +57,16 @@
 			<input type="text" name="lastName" id="txtLastName"><br>
 			<label for="txtEmail">Email:</label><br>
 			<input type="email" name="email" id="txtEmail"><br>
-			<span>Are you married?</span>
+			<span>Are you married?</span><br>
 				<input type="radio" class="radMarried" name="married" id="rMyes" value="Y" checked /> Yes
 				<input type="radio" class="radMarried" name="married" id="rMno" value="N" /> No
 				<input type="radio" class="radMarried" name="married" id="rMmaybe" value="M" /> Maybe
 			<br>
+			Foods: 
+			<select name="foods" id="selFoods">
+				<option>Apple</option>
+				<option>Banana</option>
+			</select><br>
 			<!-- TODO fix html-->
 			<input type="checkbox" name="news" id="chkNews" value="gazette"> Receive Newsletter<br>
 			<input type="checkbox" name="terms" id="chkTerms" value="accept"> Accept our terms<br>
@@ -77,6 +79,8 @@
   <footer>
     <small id="copyright" class="awayLink">&copy;<script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
   </footer>
-<script src="js/class09.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="js/class09-jquery.js"></script>
 </body>
 </html>

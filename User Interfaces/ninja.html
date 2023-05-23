@@ -24,7 +24,7 @@ Change the ninja cat's color to:
 <input id="txtColor" value="Blue">
 <button id="button_change">Change!</button>
 
-
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script>
 /*
 1. Add the jQuery library to the html page.
@@ -32,7 +32,26 @@ Change the ninja cat's color to:
 	The input field currently has the word Blue.
 */
 
+$(document).ready(function(){
+	$("#button_change").click( function () {$(".applesauce").text( $("txtColor").val() ) } );
+//	$("#button_change").click( () => {$(".applesauce").text( $("txtColor").val() ) } ); // same as above
 
+});
+
+/*
+// no jquery
+document.getElementById("button_change").addEventListener("click", changeTextColor);
+
+function changeTextColor(){
+	let newColor = document.getElementById("txtColor").value;
+	let allApplesauce  = document.getElementsByClassName("applesauce");
+
+	for (let i = 0; i < allApplesauce.length; i++){
+		document.getElementsByClassName("applesauce")[i].innerHTML = newColor;
+	}
+
+}
+*/
 </script>
 
 </body>
