@@ -18,7 +18,6 @@
   <body>
     
     <div id="container">
-      
       <div id="boxes">
         <div id="box1" class="box"></div>
         <div id="box2" class="box"></div>
@@ -41,7 +40,7 @@
       </ul>
     </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script>
 		  var colorCardinal = "rgb(153, 51, 51)";
   
@@ -51,7 +50,30 @@
 3. Toggle Rounded Borders button will toggle the appearance of a border on the boxes. (.round-edge)
 4. Add a New Box button will adds one new box
 */
-  
+$(document).ready(function(){
+  $(".box").addClass('outlined'); // just so we can see the box
+
+  // step 2
+  $("#button_toggle_colors").on("click", function(){
+    $(".box").toggleClass('cardinal');
+  });
+
+  //step 3
+  $("#button_toggle_roundedges").on("click", function(){
+    $(".box").toggleClass('round-edge');
+  });
+
+  //step 4 - <div id="box3" class="box"></div>
+  $("#button_add_box").on("click", function (){
+    // count number of .box elements
+    let countBox = $("#boxes .box").length;
+    let newBox = $("<div id='box" + (countBox+1) + "' class='box outlined'></div>");
+
+    $("#boxes").append( newBox );
+  });
+
+});  
+
 
       </script>
   </body>
