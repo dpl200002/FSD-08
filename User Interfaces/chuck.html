@@ -20,8 +20,39 @@
  <img id="chuckImg" src='URL' alt='Chuck Fact Image' />
  <div id="chuckJoke">THE JOKE</div>
  <button type="button" id="btnJoke">New Joke</button>
+
+ <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
  <script>
-	// put your code here
+  
+	$(document).ready(function(){
+
+    // click to show new joke
+    $("#btnJoke").on("click", newJoke);
+
+
+
+    /**
+     * Load a new joke and image
+     */
+    function newJoke(){
+      $.get("https://api.chucknorris.io/jokes/random", showJoke);
+      $.get("https://deckofcardsapi.com/api/deck/new/draw/?count=1", function(cardData){ 
+        console.log(cardData); // data retrieved from API
+
+        $("#chuckImg").attr("src", cardData.cards[0].image).show();
+      })
+    }
+
+    /**
+     * Show the joke
+     */
+     function showJoke(data){
+      console.log("showJoke");
+      console.log(data); // data retrieved from API
+      $("#chuckJoke").text(data.value).show();
+    }
+
+  });
  </script>
 </body>
 </html>
